@@ -5,9 +5,9 @@ public class Main {
         NotificationFactory factory = new NotificationFactory();
         NotificationService service = new NotificationService(factory);
 
-        service.sendNotification("EMAIL");
-        service.sendNotification("SMS");
-        service.sendNotification("PUSH");
-        service.sendNotification("WHATSAPP");
+        service.sendNotification(NotificationType.EMAIL);
+        service.sendNotification(NotificationType.PUSH);
+        service.sendNotification(NotificationType.SMS);
+        service.sendNotification(NotificationType.WHATSAPP);
     }
 }

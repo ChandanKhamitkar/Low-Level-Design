@@ -7,7 +7,7 @@ class NotificationService {
         this.factory = factory;
     }
 
-    public void sendNotification(String notificationType){
+    public void sendNotification(NotificationType notificationType){
         Notification notification = factory.createNotification(notificationType);
         notification.send();
     }    
